@@ -1,0 +1,15 @@
+D:\Git\Github\Enigma\Enigma_CLI\bin\Debug\net8.0\Enigma_CLI.exe
+D:\Git\Github\Enigma\Enigma_CLI\bin\Debug\net8.0\Enigma_CLI.deps.json
+D:\Git\Github\Enigma\Enigma_CLI\bin\Debug\net8.0\Enigma_CLI.runtimeconfig.json
+D:\Git\Github\Enigma\Enigma_CLI\bin\Debug\net8.0\Enigma_CLI.dll
+D:\Git\Github\Enigma\Enigma_CLI\bin\Debug\net8.0\Enigma_CLI.pdb
+D:\Git\Github\Enigma\Enigma_CLI\obj\Debug\net8.0\Enigma_CLI.GeneratedMSBuildEditorConfig.editorconfig
+D:\Git\Github\Enigma\Enigma_CLI\obj\Debug\net8.0\Enigma_CLI.AssemblyInfoInputs.cache
+D:\Git\Github\Enigma\Enigma_CLI\obj\Debug\net8.0\Enigma_CLI.AssemblyInfo.cs
+D:\Git\Github\Enigma\Enigma_CLI\obj\Debug\net8.0\Enigma_CLI.csproj.CoreCompileInputs.cache
+D:\Git\Github\Enigma\Enigma_CLI\obj\Debug\net8.0\Enigma_CLI.sourcelink.json
+D:\Git\Github\Enigma\Enigma_CLI\obj\Debug\net8.0\Enigma_CLI.dll
+D:\Git\Github\Enigma\Enigma_CLI\obj\Debug\net8.0\refint\Enigma_CLI.dll
+D:\Git\Github\Enigma\Enigma_CLI\obj\Debug\net8.0\Enigma_CLI.pdb
+D:\Git\Github\Enigma\Enigma_CLI\obj\Debug\net8.0\Enigma_CLI.genruntimeconfig.cache
+D:\Git\Github\Enigma\Enigma_CLI\obj\Debug\net8.0\ref\Enigma_CLI.dll
