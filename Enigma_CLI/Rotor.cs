@@ -1,4 +1,6 @@
-﻿namespace Enigma_CLI
+﻿using System;
+
+namespace Enigma_CLI
 {
 	/// <summary>
 	/// This class represents the rotor of the Enigma machine.
@@ -9,24 +11,21 @@
 		private readonly string _conf;
 		private readonly char _notch;
 		private char _position;
-		private readonly int _ringSetting;
+		private char _ringSetting;
 
-		private static readonly Dictionary<string, (string conf, char notch)> _configurations = new Dictionary<string, (string conf, char notch)>()
+		private static readonly Dictionary<string, (string conf, char notch)> _rotorConfigurations = new Dictionary<string, (string conf, char notch)>()
 		{
 			["I"] = ("EKMFLGDQVZNTOWYHXUSPAIBRCJ", 'Q'), // Rotor I Model Enigma I
 			["II"] = ("AJDKSIRUXBLHWTMCQGZNPYFVOE", 'E'), // Rotor II Model Enigma I
 			["III"] = ("BDFHJLCPRTXVZNYEIWGAKMUSQO", 'V') // Rotor III Model Enigma I
 		};
 
-		public Rotor(string key, int ringSetting, char position)
+		public Rotor(string key, char ringSetting, char position)
 		{
-			/*if (!_configurations.ContainsKey(key))
-				throw new ArgumentException($"Invalid rotor key: {key}");*/
-
-			this._conf = _configurations[key].conf;
-			this._notch = _configurations[key].notch;
-			this._position = position;
+			this._conf = _rotorConfigurations[key].conf;
+			this._notch = _rotorConfigurations[key].notch;
 			this._ringSetting = ringSetting;
+			this._position = position;
 		}
 
 		public bool Rotate()
@@ -35,43 +34,25 @@
 			return _position == _notch;
 		}
 
-		public char Encrypt(char letter, bool forward)
+		public char Process(char letter, bool forward)
 		{
-			letter = char.ToUpper(letter);
-			if (!_alphabet.Contains(letter))
-				return letter;
-
-			int offset = _alphabet.IndexOf(_position) - (_ringSetting - 1);
-			int letterIndex = _alphabet.IndexOf(letter);
+			int indexPosition = _alphabet.IndexOf(_position);
+			int indexRing = _alphabet.IndexOf(_ringSetting);
+			int effectiveShift = indexPosition - indexRing;
 
 			if (forward)
 			{
-				// Passage avant
-				int inputPos = (letterIndex + offset + _alphabet.Length) % _alphabet.Length;
-				char wiredChar = _conf[inputPos];
-				int outputPos = (_alphabet.IndexOf(wiredChar) - offset + _alphabet.Length) % _alphabet.Length;
-				return _alphabet[outputPos];
+				int inputIndex = (_alphabet.IndexOf(letter) + effectiveShift + _alphabet.Length) % _alphabet.Length;
+				char outputChar = _conf[inputIndex];
+				int outputIndex = (_alphabet.IndexOf(outputChar) - effectiveShift + _alphabet.Length) % _alphabet.Length;
+				return _alphabet[outputIndex];
 			}
 			else
 			{
-				// Passage inverse
-				int inputPos = (letterIndex + offset + _alphabet.Length) % _alphabet.Length;
-				int wiredPos = _conf.IndexOf(_alphabet[inputPos]);
-				int outputPos = (wiredPos - offset + _alphabet.Length) % _alphabet.Length;
-				return _alphabet[outputPos];
+				int inputIndex = (_alphabet.IndexOf(letter) + effectiveShift + _alphabet.Length) % _alphabet.Length;
+				int outputIndex = (_conf.IndexOf(_alphabet[inputIndex]) - effectiveShift + _alphabet.Length) % _alphabet.Length;
+				return _alphabet[outputIndex];
 			}
-			/*int offset = _alphabet.IndexOf(_position) - (_ringSetting - 1);
-
-			if (forward)
-			{
-				int index = (_alphabet.IndexOf(letter) + offset) % _alphabet.Length;
-				return _alphabet[(_alphabet.IndexOf(_conf[index]) - offset + _alphabet.Length) % _alphabet.Length];
-			}
-			else
-			{
-				int index = (_alphabet.IndexOf(letter) + offset) % _alphabet.Length;
-				return _alphabet[(_conf.IndexOf(_alphabet[index]) - offset + _alphabet.Length) % _alphabet.Length];
-			}*/
 		}
 	}
 }

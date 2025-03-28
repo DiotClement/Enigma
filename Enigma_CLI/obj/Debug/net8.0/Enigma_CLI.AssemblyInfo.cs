@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("Enigma_CLI")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+b1134120592f8e915bf8f4edecc346e508bf2098")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+d589a24d8715aebbd905fa3f59a980dd64fad514")]
 [assembly: System.Reflection.AssemblyProductAttribute("Enigma_CLI")]
 [assembly: System.Reflection.AssemblyTitleAttribute("Enigma_CLI")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

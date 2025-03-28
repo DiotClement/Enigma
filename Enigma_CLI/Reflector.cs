@@ -15,7 +15,7 @@
 
 		public char Reflect(char letter)
 		{
-			return _alphabet[_conf.IndexOf(char.ToUpper(letter))];
-		}	
+			return _alphabet[_conf.IndexOf(letter)];
+		}
 	}
 }
