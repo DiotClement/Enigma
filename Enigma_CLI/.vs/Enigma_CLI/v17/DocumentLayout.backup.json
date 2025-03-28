@@ -3,12 +3,12 @@
   "WorkspaceRootPath": "D:\\Git\\Github\\Enigma\\Enigma_CLI\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{2C360A5D-18A4-44E0-9A02-13247DF9418B}|Enigma_CLI.csproj|d:\\git\\github\\enigma\\enigma_cli\\enigmamachine.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{2C360A5D-18A4-44E0-9A02-13247DF9418B}|Enigma_CLI.csproj|solutionrelative:enigmamachine.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{2C360A5D-18A4-44E0-9A02-13247DF9418B}|Enigma_CLI.csproj|d:\\git\\github\\enigma\\enigma_cli\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{2C360A5D-18A4-44E0-9A02-13247DF9418B}|Enigma_CLI.csproj|solutionrelative:program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{2C360A5D-18A4-44E0-9A02-13247DF9418B}|Enigma_CLI.csproj|d:\\git\\github\\enigma\\enigma_cli\\reflector.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{2C360A5D-18A4-44E0-9A02-13247DF9418B}|Enigma_CLI.csproj|solutionrelative:reflector.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{2C360A5D-18A4-44E0-9A02-13247DF9418B}|Enigma_CLI.csproj|d:\\git\\github\\enigma\\enigma_cli\\rotor.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -19,8 +19,8 @@
       "RelativeMoniker": "D:0:0:{2C360A5D-18A4-44E0-9A02-13247DF9418B}|Enigma_CLI.csproj|solutionrelative:plugboard.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{2C360A5D-18A4-44E0-9A02-13247DF9418B}|Enigma_CLI.csproj|d:\\git\\github\\enigma\\enigma_cli\\reflector.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{2C360A5D-18A4-44E0-9A02-13247DF9418B}|Enigma_CLI.csproj|solutionrelative:reflector.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{2C360A5D-18A4-44E0-9A02-13247DF9418B}|Enigma_CLI.csproj|d:\\git\\github\\enigma\\enigma_cli\\enigmamachine.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{2C360A5D-18A4-44E0-9A02-13247DF9418B}|Enigma_CLI.csproj|solutionrelative:enigmamachine.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -30,7 +30,7 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 3,
+          "SelectedChildIndex": 5,
           "Children": [
             {
               "$type": "Bookmark",
@@ -57,46 +57,46 @@
               "RelativeDocumentMoniker": "Rotor.cs",
               "ToolTip": "D:\\Git\\Github\\Enigma\\Enigma_CLI\\Rotor.cs",
               "RelativeToolTip": "Rotor.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABYAAAA7AAAAAAAAAA==",
+              "ViewState": "AgIAABYAAAAAAAAAAAA1wBYAAAA7AAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-03-27T20:17:50.637Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 4,
               "Title": "EnigmaMachine.cs",
               "DocumentMoniker": "D:\\Git\\Github\\Enigma\\Enigma_CLI\\EnigmaMachine.cs",
               "RelativeDocumentMoniker": "EnigmaMachine.cs",
               "ToolTip": "D:\\Git\\Github\\Enigma\\Enigma_CLI\\EnigmaMachine.cs",
               "RelativeToolTip": "EnigmaMachine.cs",
-              "ViewState": "AgIAAAYAAAAAAAAAAAAQwBMAAAAAAAAAAAAAAA==",
+              "ViewState": "AgIAAE0AAAAAAAAAAAAIwBUAAAACAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-03-27T20:43:49.842Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
+              "DocumentIndex": 1,
               "Title": "Reflector.cs",
               "DocumentMoniker": "D:\\Git\\Github\\Enigma\\Enigma_CLI\\Reflector.cs",
               "RelativeDocumentMoniker": "Reflector.cs",
               "ToolTip": "D:\\Git\\Github\\Enigma\\Enigma_CLI\\Reflector.cs",
               "RelativeToolTip": "Reflector.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABQAAAABAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABMAAAACAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-03-27T20:39:34.397Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 0,
               "Title": "Program.cs",
               "DocumentMoniker": "D:\\Git\\Github\\Enigma\\Enigma_CLI\\Program.cs",
               "RelativeDocumentMoniker": "Program.cs",
               "ToolTip": "D:\\Git\\Github\\Enigma\\Enigma_CLI\\Program.cs",
               "RelativeToolTip": "Program.cs",
-              "ViewState": "AgIAAB8AAAAAAAAAAAAgwCwAAAAOAAAAAAAAAA==",
+              "ViewState": "AgIAADoAAAAAAAAAAAAgwFsAAAABAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-03-27T11:23:29.543Z",
               "EditorCaption": ""

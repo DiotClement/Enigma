@@ -85,5 +85,8 @@ public class Program
 
 		string result = enigma.Encrypt(plainText);
 		Console.WriteLine($"\nEncrypted text: {result}");
+
+		Console.WriteLine("Press Enter to exit...");
+		Console.ReadLine();
 	}
 }
